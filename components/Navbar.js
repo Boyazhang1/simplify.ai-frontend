@@ -1,3 +1,5 @@
+import { Link } from 'next';
+
 const Navbar = () => {
   return (
     <header className="text-gray-600 body-font">
@@ -7,9 +9,9 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
             viewBox="0 0 24 24"
           >
@@ -18,27 +20,33 @@ const Navbar = () => {
           <span className="ml-3 text-xl">Baddie Summarizer</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900" href="/">
-            Home
-          </a>
-          <a className="mr-5 hover:text-gray-900" href="/how">
-            How it works
-          </a>
-          <a className="mr-5 hover:text-gray-900" href="/testimonials">
-            Testimonials
-          </a>
-          <a className="mr-5 hover:text-gray-900" href="/dashboard">
-            Dashboard
-          </a>
+          <Link>
+            <a className="mr-5 hover:text-gray-900" href="/"></a>
+          </Link>
+          <Link className="mr-5 hover:text-gray-900" href="/how">
+            <a className="mr-5 hover:text-gray-900" href="/">
+              How it works
+            </a>
+          </Link>
+          <Link className="mr-5 hover:text-gray-900" href="/testimonials">
+            <a className="mr-5 hover:text-gray-900" href="/">
+              Testimonials
+            </a>
+          </Link>
+          <Link className="mr-5 hover:text-gray-900" href="/dashboard">
+            <a className="mr-5 hover:text-gray-900" href="/">
+              Dashboard
+            </a>
+          </Link>
         </nav>
         <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
           Try it now
           <svg
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             className="w-4 h-4 ml-1"
             viewBox="0 0 24 24"
           >

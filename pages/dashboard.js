@@ -12,7 +12,7 @@ const Dashboard = () => {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
             gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
+            haven&apos;t heard of them man bun deep jianbing selfies heirloom prism
             food truck ugh squid celiac humblebrag.
           </p>
         </div>
@@ -42,9 +42,9 @@ const Dashboard = () => {
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="text-indigo-500 w-12 h-12 mb-3 inline-block"
                 viewBox="0 0 24 24"
               >
@@ -63,9 +63,9 @@ const Dashboard = () => {
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="text-indigo-500 w-12 h-12 mb-3 inline-block"
                 viewBox="0 0 24 24"
               >
@@ -83,9 +83,9 @@ const Dashboard = () => {
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="text-indigo-500 w-12 h-12 mb-3 inline-block"
                 viewBox="0 0 24 24"
               >
