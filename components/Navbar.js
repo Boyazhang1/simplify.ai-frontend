@@ -20,23 +20,17 @@ const Navbar = () => {
           <span className="ml-3 text-xl">Baddie Summarizer</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <Link>
-            <a className="mr-5 hover:text-gray-900" href="/"></a>
+          <Link href="/">
+            <a className="mr-5 hover:text-gray-900"></a>
           </Link>
-          <Link className="mr-5 hover:text-gray-900" href="/how">
-            <a className="mr-5 hover:text-gray-900" href="/">
-              How it works
-            </a>
+          <Link href="/how">
+            <a className="mr-5 hover:text-gray-900">How it works</a>
           </Link>
-          <Link className="mr-5 hover:text-gray-900" href="/testimonials">
-            <a className="mr-5 hover:text-gray-900" href="/">
-              Testimonials
-            </a>
+          <Link href="/testimonials">
+            <a className="mr-5 hover:text-gray-900">Testimonials</a>
           </Link>
-          <Link className="mr-5 hover:text-gray-900" href="/dashboard">
-            <a className="mr-5 hover:text-gray-900" href="/">
-              Dashboard
-            </a>
+          <Link href="/dashboard">
+            <a className="mr-5 hover:text-gray-900">Dashboard</a>
           </Link>
         </nav>
         <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
