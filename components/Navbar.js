@@ -1,5 +1,6 @@
-import { Link } from 'next';
+import React from 'react';
 
+import Link from 'next/link';
 const Navbar = () => {
   return (
     <header className="text-gray-600 body-font">

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Hero = () => {
   return (
     <section className="text-gray-600 body-font">
