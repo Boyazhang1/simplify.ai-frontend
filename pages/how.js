@@ -14,9 +14,10 @@ const How = () => {
               Summarizes your lectures
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
-              mi pug.
+              Baddie.ai is a free open-source web app that takes in lecture
+              recordings as inputs and outputs their summaries. Simply drag and
+              drop your audio file or find it from your computer, and your
+              summary will generate very shortly.
             </p>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
@@ -39,12 +40,10 @@ const How = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  99.99% accuracy
+                  99% accuracy
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  Tested through multiple trials with university students
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
@@ -83,9 +82,7 @@ const How = () => {
                   Saves you 90% of lecture time
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  Providing you the time to do more meaningful things in life
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
@@ -123,9 +120,7 @@ const How = () => {
                   Your data is protected
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  Rest assure what you upload won't be finessed
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   See More
@@ -146,7 +141,7 @@ const How = () => {
           </div>
           <Link to="p2" smooth>
             <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              See the pipeline
+              See the workflow
             </button>
           </Link>
         </div>
@@ -177,11 +172,12 @@ const How = () => {
                 </div>
                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                    Upload lecture to our website
+                    Web interface
                   </h2>
                   <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    Drag and drop your audio file or find it from your computer
+                    and upload it to your dashboard, which sends the file to our
+                    server
                   </p>
                 </div>
               </div>
@@ -209,11 +205,13 @@ const How = () => {
                 </div>
                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                    Converts lecture to text
+                    Speech to text
                   </h2>
                   <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    We remove any excess background noise, then use the Silero
+                    speech-to-text model to convert your lecture audio to text,
+                    finally add punctuation and capitalization to the text using
+                    an internal algorithm.
                   </p>
                 </div>
               </div>
@@ -242,11 +240,12 @@ const How = () => {
                 </div>
                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                    Runs ML model
+                    Machine Learning Model
                   </h2>
                   <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    We use the Pegasus model to summarize the text, with a
+                    custom layer to the model that increases summarization
+                    accuracy for Waterloo Professors.
                   </p>
                 </div>
               </div>
@@ -275,11 +274,11 @@ const How = () => {
                 </div>
                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                    Returns text of summarized lecture
+                    Output
                   </h2>
                   <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    Simply click the download button to receive a text file of
+                    your summarized lecture.
                   </p>
                 </div>
               </div>

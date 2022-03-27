@@ -4,19 +4,49 @@ import React, { useRef, useState } from 'react';
 const FileUploader = (props) => {
   // Create a reference to the hidden file input element
   const hiddenFileInput = useRef(null);
+  const downloadButton = useRef(null);
+
   const [loading, setLoading] = useState(false);
+  const [downloadHref, setDownloadHref] = useState('');
 
   // Programatically click the hidden file input element
   // when the Button component is clicked
   const handleClick = (event) => {
     hiddenFileInput.current.click();
   };
-  const handleChange = (event) => {
-    console.log(event.target.files);
-    setLoading(true);
 
-    // props.handleFile(fileUploaded);
-    // insert upload to backend post request
+  const handleChange = async (event) => {
+    try {
+      setLoading(true);
+      const body = {
+        file: event.target.files[0],
+      };
+
+      const result1 = await fetch('https://ernestw.com:5000/submit', {
+        method: 'POST',
+        body,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
+
+      const data = await result1.json();
+
+      if (data.filename) {
+        const result2 = await fetch(
+          `https://ernestw.com:5000/file/${data.filename}`
+        );
+
+        if (result2.statusCode === 200) {
+          // todo: get specific attribute of data
+          const url = window.URL.createObjectURL(data);
+          setDownloadHref(url);
+        }
+      }
+      setLoading(false);
+    } catch (err) {
+      console.log(err);
+    }
   };
   return (
     <>
@@ -55,6 +85,14 @@ const FileUploader = (props) => {
         onChange={handleChange}
         className="hidden"
       />
+      <button
+        className="inline-flex text-white ml-32 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        disabled={downloadHref}
+      >
+        <a href={downloadHref} ref={downloadButton} download>
+          Download
+        </a>
+      </button>
     </>
   );
 };
