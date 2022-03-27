@@ -1,11 +1,11 @@
 import React from 'react';
+import FileUploader from '../components/FileUploader';
 
 import Navbar from '../components/Navbar';
 
 const Dashboard = () => {
   return (
     <section className="text-gray-600 body-font">
-      <Navbar />
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -96,9 +96,10 @@ const Dashboard = () => {
               <h2 className="title-font font-medium text-3xl text-gray-900">
                 46
               </h2>
-              <p className="leading-relaxed">Places</p>
+              <p className="leading-relaxed">Accuracy</p>
             </div>
           </div>
+          <FileUploader />
         </div>
       </div>
     </section>

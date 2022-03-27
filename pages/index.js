@@ -13,7 +13,6 @@ const navigation = [
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
     </>
   );
